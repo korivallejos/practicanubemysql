@@ -16,7 +16,7 @@ CREATE TABLE n_cliente
   region_id                  VARCHAR(3),
   comentarios                  VARCHAR(255),
   CONSTRAINT n_cliente_id_pk PRIMARY KEY (id),
-  CONSTRAINT n_cliente_calificacion_crediticia_ck
+  CONSTRAINT n_cliente_calificacion_crediticia_ck,
   CHECK (calificacion_crediticia IN ('EXCELENTE', 'BUENA', 'MALA'))
  );
 
